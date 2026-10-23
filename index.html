@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aliza Trader | Official VIP Access</title>
+    
+    <!-- Modern Geometric Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1799090684758310');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1799090684758310&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <style>
+        /* === RESET & ULTRA-FAST GPU RENDERING === */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            /* New Obsidian Wine & Deep Emerald Cyber Palette */
+            background: radial-gradient(circle at 50% 0%, #2a081c 0%, #09040e 55%, #020c0a 100%);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px 16px;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Subtle Hexagonal/Dot Matrix Pattern */
+        body::after {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: radial-gradient(rgba(255, 42, 133, 0.12) 1px, transparent 1px), 
+                              radial-gradient(rgba(0, 245, 160, 0.08) 1px, transparent 1px);
+            background-size: 28px 28px;
+            background-position: 0 0, 14px 14px;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* === FLOATING QUOTEX & DOLLAR ELEMENTS === */
+        .floating-arena {
+            position: fixed;
+            inset: 0;
+            overflow: hidden;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .floater {
+            position: absolute;
+            will-change: transform;
+            opacity: 0.22;
+            filter: drop-shadow(0 0 12px rgba(0, 245, 160, 0.4));
+            animation: floatAround 12s ease-in-out infinite alternate;
+        }
+
+        .f-1 { top: 8%; left: 6%; animation-duration: 9s; }
+        .f-2 { top: 15%; right: 7%; animation-duration: 11s; animation-delay: -2s; }
+        .f-3 { top: 48%; left: 4%; animation-duration: 13s; animation-delay: -4s; }
+        .f-4 { top: 55%; right: 5%; animation-duration: 10s; animation-delay: -1s; }
+        .f-5 { bottom: 14%; left: 8%; animation-duration: 14s; animation-delay: -3s; }
+        .f-6 { bottom: 18%; right: 8%; animation-duration: 8s; animation-delay: -5s; }
+
+        @keyframes floatAround {
+            0% { transform: translateY(0px) rotate(0deg) scale(1); }
+            50% { transform: translateY(-22px) rotate(10deg) scale(1.08); }
+            100% { transform: translateY(12px) rotate(-10deg) scale(0.95); }
+        }
+
+        /* === MAIN CARD CONTAINER === */
+        .main-card {
+            max-width: 440px;
+            width: 100%;
+            background: rgba(18, 10, 26, 0.65);
+            border: 1px solid rgba(255, 42, 133, 0.25);
+            border-radius: 28px;
+            padding: 28px 20px 22px;
+            text-align: center;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7), inset 0 0 30px rgba(255, 42, 133, 0.08);
+            z-index: 2;
+            position: relative;
+            animation: cardEntrance 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+        }
+
+        /* === CIRCULAR PROFILE WITH DUAL ORBIT RING === */
+        .avatar-box {
+            position: relative;
+            width: 134px;
+            height: 134px;
+            margin: 0 auto 16px;
+        }
+
+        .avatar-ring {
+            position: absolute;
+            inset: -5px;
+            border-radius: 50%;
+            background: conic-gradient(from 0deg, #ff2a85, #00f5a0, #7000ff, #ff2a85);
+            animation: spinRing 4s linear infinite;
+            filter: blur(6px);
+            opacity: 0.85;
+        }
+
+        .avatar-img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ffffff;
+            background: #120a1a;
+            z-index: 2;
+        }
+
+        .live-pill {
+            position: absolute;
+            bottom: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(90deg, #00f5a0, #00d9f5);
+            color: #051611;
+            font-size: 10px;
+            font-weight: 800;
+            padding: 3px 10px;
+            border-radius: 20px;
+            z-index: 3;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 12px rgba(0, 245, 160, 0.5);
+            white-space: nowrap;
+        }
+
+        /* === BRAND HEADINGS === */
+        .title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-top: 6px;
+            margin-bottom: 4px;
+            background: linear-gradient(90deg, #ffffff, #ffd1e6, #00f5a0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-size: 13px;
+            color: #cbd5e1;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        /* === HIGH-CONVERTING CTA BUTTON === */
+        .cta-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 18px 24px;
+            background: linear-gradient(90deg, #ff2a85 0%, #ff6b00 50%, #ff2a85 100%);
+            background-size: 200% auto;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 800;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(255, 42, 133, 0.45);
+            animation: gradientFlow 3s linear infinite, pulseScale 2s ease-in-out infinite;
+            transition: transform 0.2s ease;
+            margin-bottom: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+        }
+
+        .cta-btn:active {
+            transform: scale(0.96);
+        }
+
+        /* === AUTO REDIRECT TIMER BAR === */
+        .redirect-box {
+            margin-bottom: 22px;
+            background: rgba(255, 255, 255, 0.04);
+            padding: 8px 14px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .redirect-text {
+            font-size: 12px;
+            color: #00f5a0;
+            font-weight: 700;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .progress-track {
+            width: 100%;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #ff2a85, #00f5a0);
+            border-radius: 10px;
+            animation: fillProgress 5.5s linear forwards;
+        }
+
+        /* === BENTO GRID FEATURES === */
+        .bento-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 22px;
+            text-align: left;
+        }
+
+        .bento-item {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 12px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .bento-icon {
+            min-width: 34px;
+            height: 34px;
+            border-radius: 10px;
+            background: rgba(255, 42, 133, 0.15);
+            border: 1px solid rgba(255, 42, 133, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+
+        .bento-text {
+            font-size: 12.5px;
+            font-weight: 700;
+            color: #f1f5f9;
+            line-height: 1.25;
+        }
+
+        .bento-text span {
+            display: block;
+            font-size: 10px;
+            color: #94a3b8;
+            font-weight: 500;
+            margin-top: 2px;
+        }
+
+        /* === DISCLAIMER === */
+        .disclaimer {
+            font-size: 9.5px;
+            color: #64748b;
+            line-height: 1.45;
+            border-top: 1px solid rgba(255, 255, 255, 0.07);
+            padding-top: 14px;
+        }
+
+        /* === KEYFRAME ANIMATIONS === */
+        @keyframes spinRing {
+            100% { transform: rotate(360deg); }
+        }
+        @keyframes gradientFlow {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 200% 50%; }
+        }
+        @keyframes pulseScale {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+        @keyframes fillProgress {
+            0% { width: 0%; }
+            100% { width: 100%; }
+        }
+        @keyframes cardEntrance {
+            from { opacity: 0; transform: translateY(20px) scale(0.97); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SCATTERED FLOATING QUOTEX & DOLLAR GRAPHICS (ZERO LOAD TIME SVGs) -->
+    <div class="floating-arena">
+        <!-- Dollar Note 1 -->
+        <div class="floater f-1">
+            <svg width="56" height="32" viewBox="0 0 56 32" fill="none">
+                <rect x="1" y="1" width="54" height="30" rx="5" fill="#062e1e" stroke="#00f5a0" stroke-width="2"/>
+                <circle cx="28" cy="16" r="8" stroke="#00f5a0" stroke-width="1.5"/>
+                <text x="28" y="20" fill="#00f5a0" font-size="12" font-weight="bold" text-anchor="middle">$</text>
+            </svg>
+        </div>
+
+        <!-- Quotex Style Q Badge 1 -->
+        <div class="floater f-2">
+            <svg width="46" height="46" viewBox="0 0 46 46" fill="none">
+                <rect width="46" height="46" rx="12" fill="#180b29" stroke="#ff2a85" stroke-width="2"/>
+                <path d="M15 23L22 14L29 23L22 32L15 23Z" fill="#00f5a0"/>
+                <text x="23" y="27" fill="#ffffff" font-size="11" font-weight="800" text-anchor="middle">QX</text>
+            </svg>
+        </div>
+
+        <!-- Candlesticks Graphic -->
+        <div class="floater f-3">
+            <svg width="44" height="48" viewBox="0 0 44 48" fill="none">
+                <line x1="10" y1="6" x2="10" y2="42" stroke="#ff2a85" stroke-width="2"/>
+                <rect x="6" y="14" width="8" height="18" rx="2" fill="#ff2a85"/>
+                <line x1="28" y1="2" x2="28" y2="38" stroke="#00f5a0" stroke-width="2"/>
+                <rect x="24" y="8" width="8" height="22" rx="2" fill="#00f5a0"/>
+            </svg>
+        </div>
+
+        <!-- Dollar Coin -->
+        <div class="floater f-4">
+            <svg width="42" height="42" viewBox="0 0 42 42" fill="none">
+                <circle cx="21" cy="21" r="19" fill="#1f1605" stroke="#ffb800" stroke-width="2"/>
+                <text x="21" y="27" fill="#ffb800" font-size="18" font-weight="800" text-anchor="middle">$</text>
+            </svg>
+        </div>
+
+        <!-- Quotex Style Q Badge 2 -->
+        <div class="floater f-5">
+            <svg width="42" height="42" viewBox="0 0 42 42" fill="none">
+                <circle cx="21" cy="21" r="19" fill="#06281e" stroke="#00f5a0" stroke-width="2"/>
+                <text x="21" y="25" fill="#00f5a0" font-size="13" font-weight="800" text-anchor="middle">QX</text>
+            </svg>
+        </div>
+
+        <!-- Dollar Note 2 -->
+        <div class="floater f-6">
+            <svg width="52" height="28" viewBox="0 0 56 32" fill="none">
+                <rect x="1" y="1" width="54" height="30" rx="5" fill="#062e1e" stroke="#00f5a0" stroke-width="2"/>
+                <text x="28" y="21" fill="#00f5a0" font-size="14" font-weight="bold" text-anchor="middle">$$</text>
+            </svg>
+        </div>
+    </div>
+
+    <!-- MAIN GLASS CARD -->
+    <div class="main-card">
+        
+        <!-- TOP PROFILE IMAGE -->
+        <div class="avatar-box">
+            <div class="avatar-ring"></div>
+            <img src="https://www.image2url.com/r2/default/images/1792751414696-a2f5af8e-1479-46b4-b8de-64972ee70912.jpg" alt="Aliza Trader" class="avatar-img">
+            <div class="live-pill">● VIP SESSIONS LIVE</div>
+        </div>
+
+        <!-- BRANDING -->
+        <h1 class="title">ALIZA TRADER</h1>
+        <p class="subtitle">Next-Gen Market Analysis & VIP Hub</p>
+
+        <!-- MAIN CTA BUTTON -->
+        <a id="join-telegram-btn" href="https://t.me/+n5n-1cMGlQc0NGU9" class="cta-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            Join Telegram Channel
+        </a>
+
+        <!-- AUTO REDIRECT STATUS -->
+        <div class="redirect-box">
+            <div class="redirect-text">
+                <span>⚡ Redirecting to Telegram in <span id="timer-sec">5</span>s...</span>
+            </div>
+            <div class="progress-track">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+
+        <!-- 2x2 BENTO PERKS -->
+        <div class="bento-grid">
+            <div class="bento-item">
+                <div class="bento-icon">🎯</div>
+                <div class="bento-text">Sureshot Setups<span>95%+ High Accuracy</span></div>
+            </div>
+            <div class="bento-item">
+                <div class="bento-icon">💵</div>
+                <div class="bento-text">Loss Recovery<span>Daily Live Sessions</span></div>
+            </div>
+            <div class="bento-item">
+                <div class="bento-icon">📊</div>
+                <div class="bento-text">Free Signals<span>Real-Time Alerts</span></div>
+            </div>
+            <div class="bento-item">
+                <div class="bento-icon">👑</div>
+                <div class="bento-text">VIP Community<span>100% Free Access</span></div>
+            </div>
+        </div>
+
+        <!-- META COMPLIANT DISCLAIMER -->
+        <div class="disclaimer">
+            <p><strong>Disclaimer:</strong> This site is not a part of the Facebook™ website or Meta Platforms, Inc. Additionally, this site is NOT endorsed by Meta in any way.</p>
+            <p style="margin-top: 4px;">Trading in financial markets involves substantial risk. Past performance is not indicative of future results. Content is strictly for educational purposes.</p>
+        </div>
+
+    </div>
+
+    <!-- TRACKING & 5.5s AUTO-REDIRECT SCRIPT -->
+    <script>
+        (function() {
+            const tgLink = "https://t.me/+n5n-1cMGlQc0NGU9";
+            const joinBtn = document.getElementById('join-telegram-btn');
+            const timerSpan = document.getElementById('timer-sec');
+            let eventTracked = false;
+
+            function fireSubscribePixel() {
+                if (!eventTracked) {
+                    eventTracked = true;
+                    if (typeof fbq === 'function') {
+                        fbq('track', 'Subscribe');
+                    }
+                }
+            }
+
+            // 1. Manual Button Click: Fires Subscribe immediately & lets native browser open Telegram
+            joinBtn.addEventListener('click', function() {
+                clearTimeout(autoRedirectTimer);
+                clearInterval(countdownInterval);
+                fireSubscribePixel();
+            });
+
+            // 2. Live Countdown Display (5 to 1 seconds)
+            let secondsLeft = 5;
+            const countdownInterval = setInterval(function() {
+                secondsLeft--;
+                if (secondsLeft >= 0 && timerSpan) {
+                    timerSpan.textContent = secondsLeft;
+                }
+            }, 1000);
+
+            // 3. Automatic Redirect after 5.5 seconds
+            const autoRedirectTimer = setTimeout(function() {
+                clearInterval(countdownInterval);
+                fireSubscribePixel();
+                window.location.href = tgLink;
+            }, 5500);
+        })();
+    </script>
+
+</body>
+</html>
